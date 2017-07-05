@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+              function print (text) {
+                    alert(text);
+              }
+
+              function goToMyPage () {
+                    window.location = "http://vk.com/rily29_warthunder";
+              }
+
+              function goToMyChannelInYT () {
+                    window.location = "https://www.youtube.com/channel/UC4f9mrJDdOb5RFA4uKiTlJw";
+              }
+
+              function startGame () {
+                alert("Это игра 'Try to escape'");
+        if (confirm("Вы хотите начать игру?")) {
+          if (confirm("Перед вами две двери. Если вы хотите пойти в левую нажмите 'Отмена', если в правую нажмите 'Ок'")) {
+            if (confirm("Поздравляем вы прошли дальше! Перед вами огромный монстр, у вас есть нож. У вас есть два варианта: попробовать убить монстра ножом или же убежать в узкую дверь через которую монстр пробраться не сможет. Если хотите попробовать первый вариант то нажмите 'Отмена' если второй способ то 'Ок'")) {
+              alert("Пока вы убегали вас съел монстр!");
+            } else {
+              alert("Поздравляем вы прошли дальше!");
+              if (confirm("Это последний уровень. Перед вами большой(в смысле жирный) лев и у вас пистолет с пулями 10-го калибра и пистолет с пулями 30-го калибра. Если выберите первый вариант нажмите 'Отмена', если второй то 'Ок'")) {
+                alert("Поздравляем! Вы прошли игру 'Try to escape'!");
+              } else {
+                alert("Пуля не пробила этого толстого монстра и он сожрал вас!(Нажмите на кнопку чтобы начать сначала.)");
+              }
+            }
+          } else {
+            alert("Вы умерли! Нажмите кнопку чтобы начать сначала.");
+          }
+        } else {
+          alert("НАЖМИТЕ НА КНОПКУ ЧТОБЫ НАЧАТЬ ИГРУ!!!");
+        }
+              }
+
+              function calculator () {
+                alert("Это калькулятор.");
+alert("Опции: Введите + чтобы сложить два числа. Введите - чтобы вычесть одно число из другого. Введите * чтобы умножить два числа. Введите / чтобы поделить два числа. Введите ^ чтобы возвести число в степень.");
+var user_input = prompt("Input: ");
+var user_input_add = "+";
+var user_input_subtract = "-";
+var user_input_multiply = "*";
+var user_input_dividle = "/";
+var user_input_stepen = "^";
+if (user_input == user_input_add) {
+  var a = +prompt("Введите первое слагаемое: ");
+  var b = +prompt("Введите второе слагаемое: ");
+  var result = a + b;
+  alert("Сумма введёных чисел равна " + result);
+} else {
+  if (user_input == user_input_subtract) {
+    var a = +prompt("Введите уменьшаемое: ");
+    var b = +prompt("Введите вычитаемое: ");
+    var result = a - b;
+    alert("Разность введёных чисел равна " + result);
+  } else {
+    if (user_input == user_input_multiply) {
+      var a = +prompt("Введите первый множитель: ");
+      var b = +prompt("Введите второй множитель: ");
+      var result = a * b;
+      alert("Произведение введёных чисел равно " + result);
+    } else {
+      if (user_input == user_input_dividle) {
+        var a = +prompt("Введите делимое: ");
+        var b = +prompt("Введите делитель: ");
+        var result = a / b;
+        alert("Частное введёных чисел равно " + result);
+      } else {
+        if (user_input == user_input_stepen) {
+          var a = +prompt("Введите основание степени: ");
+          var b = +prompt("Введите показатель степени: ");
+          var result = a ** b;
+          alert("Результат: " + result);
+        } else {
+          alert("ERROR 404. error input")
+        }
+      }
+    }
+  }
+}
+              }
+
+              function conventer () {
+                var input_rub;
+                input_rub = +prompt("Введите число рублей, которые надо перевести в доллары и евро: ");
+                var dollars = input_rub / 59;
+                var euros = input_rub / 67;
+                alert("Количество введёных рублей в долларах: " + dollars + "." + "Количество введёных рублей в евро: " + euros + ".");
+              }
+        </script>
+        <style>
+                body {
+                    background: gray;
+                    font-family: Arial, sans-serif;
+                    vertical-align: middle;
+                    border: dashed lightgreen 10px;
+                }
+
+                input.input {
+                    background: green;
+                    color: darkred;
+                    border: solid purple 5px;
+                }
+        </style>
+</head>
+<body>
+        <h1 align="center" style="color: lightgreen;"><strong><i>Это сборник моих работающих программ.</i></strong></h1>
+        <p style="color: lightgreen;"><i>P.S. Первая программа это не совсем программа))) Так что их три.</i></p>
+        <input type="submit" name="submit1" value=" Нажмите чтобы вывести сообщение с текстом 'Hello, World!'" onclick="print('Hello, World!');" class="input"/><br /><br />
+        <input type="submit" name="submit2" value="Нажмите чтобы перейти на страницу создателя в ВК" onclick="goToMyPage();" class="input"><br /><br />
+        <input type="submit" name="submit3" value="Нажмите чтобы перейти на ютуб канал создателя" onclick="goToMyChannelInYT();" class="input"><br /><br />
+        <input type="submit" name="submit4" value="Нажмите чтобы начать игру 'Try To Escape'." onclick="startGame();" class="input"><br /><br />
+        <input type="submit" name="submit5" value="Нажмите чтобы запустить калькулятор." onclick="calculator();" class="input"><br /><br />
+        <input type="submit" name="submit6" value="Нажмите чтобы запустить конвентер(рубли в доллары и евро)." onclick="conventer();" class="input"><br /><br />
+</html>
